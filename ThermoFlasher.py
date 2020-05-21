@@ -6,10 +6,10 @@ def start(msg):
     print(msg, end=" ", flush=True)
 
 def done(msg="done"):
-    print(f"\033[92m{msg}\033[0m")
+    print(f"{msg}")
 
 def error(e, msg="failed!"):
-    print(f"\033[91m{msg}\033[0m")
+    print(f"{msg}")
     if e: print(e)
     cleanup()
     input("Press [enter] to exit")
